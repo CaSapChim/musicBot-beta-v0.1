@@ -2,6 +2,12 @@ const getLocalCommands = require('../../utils/getLocalCommands.js');
 const { InteractionType } = require('discord.js')
 const { useQueue } = require('discord-player');
 
+/**
+ *
+ * @param {import('discord.js').Client} client
+ * @param {import('discord.js').ChatInputCommandInteraction} interaction
+*/
+
 module.exports = async (client, interaction) => {
      try {
           await interaction.deferReply();
